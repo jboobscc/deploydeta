@@ -11,9 +11,8 @@ def get_html(url):
     return response.text
 
 @app.route('/', methods=["GET"])
-
 def hello_world():
-  return "Hello World"
+	return "Hello World"
 
 @app.route('/ip', methods=["GET"])
 def getip():
