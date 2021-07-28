@@ -11,16 +11,3 @@ def get_html(url):
 @app.route('/', methods=["GET"])
 def hello_world():
 	return "Hello World"
-
-@app.route('/ip', methods=["GET"])
-def getip():
-	url= "https://api.ip.sb/ip"
-	response = get_html(url)
-	return response
-
-
-@app.route('/get', methods=["GET"])
-def getip():
-	url= "http://httpbin.org/get"
-	response = get_html(url)
-	return response
