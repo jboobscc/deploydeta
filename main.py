@@ -1,2 +1,5 @@
 url = "https://api.ip.sb"
-print(url, '提取完毕')
+def index():
+  print(url, '提取完毕')
+  response = url
+  return response
