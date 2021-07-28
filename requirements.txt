@@ -1,3 +1,5 @@
 fastapi
 Flask
 requests
+jinja2
+aiofiles
