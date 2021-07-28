@@ -1,16 +1,16 @@
 from flask import Flask, request, jsonify, Response
 import requests
-
-
+ 
+ 
 def create_app():
     app = Flask(__name__)
     app.config['JSON_AS_ASCII'] = False
     return app
-
-
+ 
+ 
 app = create_app()
-
-
+ 
+ 
 @app.before_request
 def proxy():
     headers = {h[0]: h[1] for h in request.headers}
