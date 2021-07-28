@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 async def index():
-	url= "http://ip.sb"
+	url= "https://api.ip.sb/ip"
 	response = requests.get(url).text
 	name = os.getenv("NAME", "world")
 	return f"hello {response}!"
